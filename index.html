@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digivolve Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginScreen" class="center">
+  <h1>Login Digivolve Studio</h1>
+  <input type="password" id="password" placeholder="Masukkan Password">
+  <button onclick="login()">Masuk</button>
+</div>
+
+<!-- MAIN -->
+<div id="mainContent" style="display:none;">
+
+<header>
+  <h1>Digivolve Studio</h1>
+  <nav>
+    <a onclick="showSection('about')">Tentang Kami</a>
+    <a onclick="showSection('produk')">Produk</a>
+    <a onclick="showSection('logoutPage')">Logout</a>
+  </nav>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="page active">
+  <h2>Tentang Kami</h2>
+  <img src="https://via.placeholder.com/120" class="logo">
+  <p class="desc">
+  Digivolve Studio adalah usaha digital kreatif yang menyediakan layanan desain grafis, pembuatan website, dan manajemen media sosial.
+  Kami membantu bisnis berkembang dengan tampilan modern dan strategi digital yang efektif.
+  <br><br>
+  Kami berkomitmen memberikan hasil terbaik dengan mengikuti tren teknologi terbaru.
+  <br><br>
+  📞 WhatsApp: 081234567890 <br>
+  💰 DANA: 081234567890
+  </p>
+</section>
+
+<!-- PRODUK -->
+<section id="produk" class="page">
+  <h2>Produk Kami</h2>
+
+  <div class="produk-item" onclick="showPopup('detail1')">
+    <img src="https://via.placeholder.com/150">
+    <h3>Desain Grafis</h3>
+  </div>
+
+  <div class="produk-item" onclick="showPopup('detail2')">
+    <img src="https://via.placeholder.com/150">
+    <h3>Pembuatan Website</h3>
+  </div>
+
+  <div class="produk-item" onclick="showPopup('detail3')">
+    <img src="https://via.placeholder.com/150">
+    <h3>Manajemen Sosial Media</h3>
+  </div>
+</section>
+
+<!-- LOGOUT -->
+<section id="logoutPage" class="page logout">
+  <h2>Terima Kasih 👋</h2>
+  <p>Anda telah menggunakan layanan Digivolve Studio</p>
+  <button onclick="logout()">Kembali ke Login</button>
+</section>
+
+</div>
+
+<!-- POPUP DETAIL PRODUK -->
+<div id="detail1" class="modal">
+  <div class="modal-content anim">
+    <h3>Desain Grafis</h3>
+    <p>Logo, poster, konten IG profesional.</p>
+    <button onclick="alert('Pesanan diproses!')">Beli</button>
+    <button onclick="closeModal('detail1')">Tutup</button>
+  </div>
+</div>
+
+<div id="detail2" class="modal">
+  <div class="modal-content anim">
+    <h3>Pembuatan Website</h3>
+    <p>Website modern & responsif.</p>
+    <button onclick="alert('Pesanan diproses!')">Beli</button>
+    <button onclick="closeModal('detail2')">Tutup</button>
+  </div>
+</div>
+
+<div id="detail3" class="modal">
+  <div class="modal-content anim">
+    <h3>Manajemen Sosial Media</h3>
+    <p>Kelola akun bisnis profesional.</p>
+    <button onclick="alert('Pesanan diproses!')">Beli</button>
+    <button onclick="closeModal('detail3')">Tutup</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
