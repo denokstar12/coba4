@@ -1,0 +1,109 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: linear-gradient(135deg,#00bfa5,#0288d1);
+  color: white;
+}
+
+.center {
+  text-align: center;
+  margin-top: 150px;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background: #004d40;
+  color: white;
+  cursor: pointer;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+nav a {
+  margin: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.page {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.page.active {
+  display: block;
+}
+
+.logo {
+  width: 120px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.desc {
+  max-width: 500px;
+  margin: auto;
+}
+
+.produk-item {
+  display: inline-block;
+  margin: 10px;
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.produk-item:hover {
+  transform: scale(1.05);
+}
+
+.produk-item img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.logout {
+  background: rgba(0,0,0,0.3);
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: white;
+  color: black;
+  margin: 10% auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.anim {
+  animation: zoom 0.3s ease;
+}
+
+@keyframes zoom {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
